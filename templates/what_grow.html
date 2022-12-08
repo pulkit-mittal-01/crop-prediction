@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>what crop to grow</title>
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/what_crop.css') }}">
+</head>
+<body>
+    <form  action="crop" method="get">
+        <div class="container">
+            <input  name="nitrogen" placeholder="Nitrogen">
+            <input  name="potatisum" placeholder="Potasium">
+            <input  name="calsium" placeholder="Calsium">
+            <input  name="temperature" placeholder="Temperature">
+            <input name="humidity" placeholder="Humidity">
+            <input  name="ph" placeholder="PH">
+            <input  name="rainfall" placeholder="Rainfall"><br>
+            <button class="btn" type="submit">find</button>
+            <br>
+            &nbsp&nbsp&nbsp&nbsp{{OUTPUT}}
+        </div>
+    </form>
+
+    
+</body>
+</html>

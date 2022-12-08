@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State_wise_prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/state_wise.css') }}">
+</head>
+<body>
+    <form action="state" method="get">
+        <div class="container">
+            <label for="state" style="margin-left:3.6%;" >State</label>
+            <select id="state" name=state style="margin-left:3.6%; margin-top:4%; margin-bottom:2%;">
+                <option value= 0 >Andaman and Nicobar Islands</option>
+<option value= 1 >Andhra Pradesh</option>
+<option value= 2 >Arunachal Pradesh</option>
+<option value= 3 >Assam</option>
+<option value= 4 >Bihar</option>
+<option value= 5 >Chandigarh</option>
+<option value= 6 >Chhattisgarh</option>
+<option value= 7 >Dadra and Nagar Haveli</option>
+<option value= 8 >Goa</option>
+<option value= 9 >Gujarat</option>
+<option value= 10 >Haryana</option>
+<option value= 11 >Himachal Pradesh</option>
+<option value= 12 >Jammu and Kashmir </option>
+<option value= 13 >Jharkhand</option>
+<option value= 14 >Karnataka</option>
+<option value= 15 >Kerala</option>
+<option value= 16 >Madhya Pradesh</option>
+<option value= 17 >Maharashtra</option>
+<option value= 18 >Manipur</option>
+<option value= 19 >Meghalaya</option>
+<option value= 20 >Mizoram</option>
+<option value= 21 >Nagaland</option>
+<option value= 22 >Odisha</option>
+<option value= 23 >Puducherry</option>
+<option value= 24 >Punjab</option>
+<option value= 25 >Rajasthan</option>
+<option value= 26 >Sikkim</option>
+<option value= 27 >Tamil Nadu</option>
+<option value= 28 >Telangana </option>
+<option value= 29 >Tripura</option>
+<option value= 30 >Uttar Pradesh</option>
+<option value= 31 >Uttarakhand</option>
+<option value= 32 >West Bengal</option>
+            </select>
+            <br><button class="btn" type="submit">find</button>
+            <br>
+            {{OUTPUT}}
+        </div>
+    </form>
+</body>
+</html>

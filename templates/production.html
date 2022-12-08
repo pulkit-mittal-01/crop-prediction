@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>production</title>
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/production.css') }}">
+</head>
+<body>
+    <form action="produce" method="get">
+        <div class="container">
+            <label for="state" style="margin-left:3.6%;" >State</label>
+            <select id="state" name=state style="margin-left:3.6%; margin-top:4%; margin-bottom:2%;">
+                <option value= 0 >Andaman and Nicobar Islands</option>
+<option value= 1 >Andhra Pradesh</option>
+<option value= 2 >Arunachal Pradesh</option>
+<option value= 3 >Assam</option>
+<option value= 4 >Bihar</option>
+<option value= 5 >Chandigarh</option>
+<option value= 6 >Chhattisgarh</option>
+<option value= 7 >Dadra and Nagar Haveli</option>
+<option value= 8 >Goa</option>
+<option value= 9 >Gujarat</option>
+<option value= 10 >Haryana</option>
+<option value= 11 >Himachal Pradesh</option>
+<option value= 12 >Jammu and Kashmir </option>
+<option value= 13 >Jharkhand</option>
+<option value= 14 >Karnataka</option>
+<option value= 15 >Kerala</option>
+<option value= 16 >Madhya Pradesh</option>
+<option value= 17 >Maharashtra</option>
+<option value= 18 >Manipur</option>
+<option value= 19 >Meghalaya</option>
+<option value= 20 >Mizoram</option>
+<option value= 21 >Nagaland</option>
+<option value= 22 >Odisha</option>
+<option value= 23 >Puducherry</option>
+<option value= 24 >Punjab</option>
+<option value= 25 >Rajasthan</option>
+<option value= 26 >Sikkim</option>
+<option value= 27 >Tamil Nadu</option>
+<option value= 28 >Telangana </option>
+<option value= 29 >Tripura</option>
+<option value= 30 >Uttar Pradesh</option>
+<option value= 31 >Uttarakhand</option>
+<option value= 32 >West Bengal</option>
+            </select>
+            <br><label for="crop" style="margin-left:3.6%;">Crop</label>
+            <select id="crop" name=crop style="margin-left:3.6%; margin-bottom:2%;">
+                <option value= 0 >Arecanut</option>
+<option value= 1 >Other Kharif pulses</option>
+<option value= 2 >Rice</option>
+<option value= 3 >Banana</option>
+<option value= 4 >Cashewnut</option>
+<option value= 5 >Coconut </option>
+<option value= 6 >Dry ginger</option>
+<option value= 7 >Sugarcane</option>
+<option value= 8 >Sweet potato</option>
+<option value= 9 >Tapioca</option>
+<option value= 10 >Black pepper</option>
+<option value= 11 >Dry chillies</option>
+<option value= 12 >other oilseeds</option>
+<option value= 13 >Turmeric</option>
+<option value= 14 >Maize</option>
+<option value= 15 >Moong(Green Gram)</option>
+<option value= 16 >Urad</option>
+<option value= 17 >Arhar/Tur</option>
+<option value= 18 >Groundnut</option>
+<option value= 19 >Sunflower</option>
+<option value= 20 >Bajra</option>
+<option value= 21 >Castor seed</option>
+<option value= 22 >Cotton(lint)</option>
+<option value= 23 >Horse-gram</option>
+<option value= 24 >Jowar</option>
+<option value= 25 >Korra</option>
+<option value= 26 >Ragi</option>
+<option value= 27 >Tobacco</option>
+<option value= 28 >Gram</option>
+<option value= 29 >Wheat</option>
+<option value= 30 >Masoor</option>
+<option value= 31 >Sesamum</option>
+<option value= 32 >Linseed</option>
+<option value= 33 >Safflower</option>
+<option value= 34 >Onion</option>
+<option value= 35 >other misc. pulses</option>
+<option value= 36 >Samai</option>
+<option value= 37 >Small millets</option>
+<option value= 38 >Coriander</option>
+<option value= 39 >Potato</option>
+<option value= 40 >Other  Rabi pulses</option>
+<option value= 41 >Soyabean</option>
+<option value= 42 >Beans & Mutter(Vegetable)</option>
+<option value= 43 >Bhindi</option>
+<option value= 44 >Brinjal</option>
+<option value= 45 >Citrus Fruit</option>
+<option value= 46 >Cucumber</option>
+<option value= 47 >Grapes</option>
+<option value= 48 >Mango</option>
+<option value= 49 >Orange</option>
+<option value= 50 >other fibres</option>
+<option value= 51 >Other Fresh Fruits</option>
+<option value= 52 >Other Vegetables</option>
+<option value= 53 >Papaya</option>
+<option value= 54 >Pome Fruit</option>
+<option value= 55 >Tomato</option>
+<option value= 56 >Mesta</option>
+<option value= 57 >Cowpea(Lobia)</option>
+<option value= 58 >Lemon</option>
+<option value= 59 >Pome Granet</option>
+<option value= 60 >Sapota</option>
+<option value= 61 >Cabbage</option>
+<option value= 62 >Rapeseed &Mustard</option>
+<option value= 63 >Peas  (vegetable)</option>
+<option value= 64 >Niger seed</option>
+<option value= 65 >Bottle Gourd</option>
+<option value= 66 >Varagu</option>
+<option value= 67 >Garlic</option>
+<option value= 68 >Ginger</option>
+<option value= 69 >Oilseeds total</option>
+<option value= 70 >Pulses total</option>
+<option value= 71 >Jute</option>
+<option value= 72 >Peas & beans (Pulses)</option>
+<option value= 73 >Blackgram</option>
+<option value= 74 >Paddy</option>
+<option value= 75 >Pineapple</option>
+<option value= 76 >Barley</option>
+<option value= 77 >Sannhamp</option>
+<option value= 78 >Khesari</option>
+<option value= 79 >Guar seed</option>
+<option value= 80 >Moth</option>
+<option value= 81 >Other Cereals & Millets</option>
+<option value= 82 >Cond-spcs other</option>
+<option value= 83 >Turnip</option>
+<option value= 84 >Carrot</option>
+<option value= 85 >Redish</option>
+<option value= 86 >Arcanut (Processed)</option>
+<option value= 87 >Atcanut (Raw)</option>
+<option value= 88 >Cashewnut Processed</option>
+<option value= 89 >Cashewnut Raw</option>
+<option value= 90 >Cardamom</option>
+<option value= 91 >Rubber</option>
+<option value= 92 >Bitter Gourd</option>
+<option value= 93 >Drum Stick</option>
+<option value= 94 >Jack Fruit</option>
+<option value= 95 >Snak Guard</option>
+<option value= 96 >Tea</option>
+<option value= 97 >Coffee</option>
+<option value= 98 >Cauliflower</option>
+<option value= 99 >Other Citrus Fruit</option>
+<option value= 100 >Water Melon</option>
+<option value= 101 >Total foodgrain</option>
+<option value= 102 >Kapas</option>
+<option value= 103 >Colocosia</option>
+<option value= 104 >Lentil</option>
+<option value= 105 >Bean</option>
+<option value= 106 >Jobster</option>
+<option value= 107 >Perilla</option>
+<option value= 108 >Rajmash Kholar</option>
+<option value= 109 >Ricebean (nagadal)</option>
+<option value= 110 >Ash Gourd</option>
+<option value= 111 >Beet Root</option>
+<option value= 112 >Lab-Lab</option>
+<option value= 113 >Ribed Guard</option>
+<option value= 114 >Yam</option>
+<option value= 115 >Pump Kin</option>
+<option value= 116 >Apple</option>
+<option value= 117 >Peach</option>
+<option value= 118 >Pear</option>
+<option value= 119 >Plums</option>
+<option value= 120 >Litchi</option>
+<option value= 121 >Ber</option>
+<option value= 122 >Other Dry Fruit</option>
+<option value= 123 >Jute & mesta</option>
+            </select>
+            <br>Area <input name=area style="margin-left:7.2%; margin-bottom: 1.2%;" >
+            <br>Production <input name=production style="margin-left:0.2%; margin-bottom: 1.2%;" >
+            <br><label for="season" style="margin-left:3.6%;">Season</label>
+            <select id="season" name=season style="margin-left:0.6%;">
+                <option value= 0 >Kharif</option>
+<option value= 1 >Whole Year</option>
+<option value= 2 >Autumn</option>
+<option value= 3 >Rabi</option>
+<option value= 4 >Summer</option>
+<option value= 5 >Winter</option>
+            </select>
+            <br><button class="btn" type="submit">find</button>
+            <br>
+            {{OUTPUT}}
+        </div>
+    </form>
+</body>
+</html>
